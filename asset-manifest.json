@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Crop-Disease-Detection/static/css/main.8dfd89da.css",
+    "main.js": "/Crop-Disease-Detection/static/js/main.b90e1f21.js",
+    "static/js/453.d7446e4a.chunk.js": "/Crop-Disease-Detection/static/js/453.d7446e4a.chunk.js",
+    "index.html": "/Crop-Disease-Detection/index.html",
+    "main.8dfd89da.css.map": "/Crop-Disease-Detection/static/css/main.8dfd89da.css.map",
+    "main.b90e1f21.js.map": "/Crop-Disease-Detection/static/js/main.b90e1f21.js.map",
+    "453.d7446e4a.chunk.js.map": "/Crop-Disease-Detection/static/js/453.d7446e4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8dfd89da.css",
+    "static/js/main.b90e1f21.js"
+  ]
+}

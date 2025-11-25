@@ -4,4 +4,4 @@ pillow
 numpy
 flask-cors
 axios
-
+gunicorn==21.2.0

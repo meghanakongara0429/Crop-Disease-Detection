@@ -4,6 +4,4 @@ pillow
 numpy
 flask-cors
 axios
-tailwindcss
-postcss 
-autoprefixer
+

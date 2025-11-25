@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 flask 
 tensorflow 
 pillow 
@@ -8,12 +7,3 @@ axios
 tailwindcss
 postcss 
 autoprefixer
-=======
-flask
-flask-cors
-tensorflow
-numpy
-pillow
-gunicorn
-
->>>>>>> 482a83334c538645fccfe6e1688a5b3be2132fea

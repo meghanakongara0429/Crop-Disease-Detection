@@ -1,8 +1,4 @@
-Got it 👍
-Here is **clean copy–paste README** (no lines, no emojis)
-with **your repo name replaced correctly**.
 
----
 
 # Crop Disease Detection
 

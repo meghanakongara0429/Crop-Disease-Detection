@@ -5,4 +5,3 @@ __pycache__/
 *.keras
 node_modules/
 .env
-backend/model/plantVillage

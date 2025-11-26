@@ -6,7 +6,15 @@ import numpy as np
 from io import BytesIO
 
 app = Flask(__name__)
-CORS(app)
+
+CORS(app, resources={
+    r"/*": {
+        "origins": "*",
+        "methods": ["POST", "GET", "OPTIONS"],
+        "allow_headers": ["Content-Type"],
+    }
+})
+
 
 # Load your trained model
 MODEL_PATH = "model/plant_model.h5"   # DO NOT USE "backend/model/..."

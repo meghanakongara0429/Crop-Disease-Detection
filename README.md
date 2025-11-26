@@ -10,7 +10,7 @@ An AI-powered application that detects crop diseases from leaf images and provid
 
 ## Overview
 
-The system uses a deep learning model (MobileNetV2) to classify diseases in tomato, potato, and pepper leaves.
+The system uses a deep learning model (CNN) to classify diseases in tomato, potato, and pepper leaves.
 Frontend allows image upload and displays detection results.
 Backend predicts disease and returns recommendations.
 

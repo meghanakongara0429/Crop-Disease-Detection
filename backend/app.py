@@ -7,13 +7,7 @@ from io import BytesIO
 
 app = Flask(__name__)
 
-CORS(app, resources={
-    r"/*": {
-        "origins": "*",
-        "methods": ["POST"],
-        "allow_headers": ["Content-Type"],
-    }
-})
+CORS(app, resources={r"/predict": {"origins": "*"}}, supports_credentials=True)
 
 
 # Load your trained model

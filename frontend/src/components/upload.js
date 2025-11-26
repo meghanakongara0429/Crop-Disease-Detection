@@ -23,13 +23,13 @@ export default function Upload() {
 
         try {
             const res = await axios.post(
-                "https://crop-disease-detection-9-znu8.onrender.com",
-                formData,
-                { headers: { "Content-Type": "multipart/form-data" } }
+                "https://crop-disease-detection-9-znu8.onrender.com/predict",
+                formData
             );
             setResult(res.data);
         } catch (err) {
-            alert("Server disconnected or backend error.");
+            console.error(err);
+            alert("Server disconnected or CORS blocked.");
         }
 
         setLoading(false);
@@ -39,7 +39,8 @@ export default function Upload() {
         <div
             className="min-h-screen flex justify-center items-center bg-cover bg-center p-8"
             style={{
-                backgroundImage: "url('https://i0.wp.com/razzanj.com/wp-content/uploads/2016/07/nature-landscape-nature-landscape-hd-image-download-wheat-farm-hd-wallpaper-notebook-background-wheat-farmers-wheat-farming-process-wheat-farming-in-kenya.jpg?ssl=1')",
+                backgroundImage:
+                    "url('https://i0.wp.com/razzanj.com/wp-content/uploads/2016/07/nature-landscape-nature-landscape-hd-image-download-wheat-farm-hd-wallpaper-notebook-background-wheat-farmers-wheat-farming-process-wheat-farming-in-kenya.jpg?ssl=1')",
             }}
         >
             <div className="bg-white/80 backdrop-blur-md shadow-2xl rounded-2xl p-8 max-w-xl w-full border border-white/40">
@@ -51,7 +52,6 @@ export default function Upload() {
                     Upload a high-quality leaf image to detect disease
                 </p>
 
-                {/* Upload Section */}
                 <div className="mt-6 border-2 border-dashed border-green-500/60 rounded-xl p-6 text-center hover:bg-green-50/60 transition cursor-pointer">
                     <label className="cursor-pointer">
                         <input
@@ -66,7 +66,6 @@ export default function Upload() {
                     </label>
                 </div>
 
-                {/* Image Preview */}
                 {preview && (
                     <div className="flex justify-center mt-5">
                         <img
@@ -77,7 +76,6 @@ export default function Upload() {
                     </div>
                 )}
 
-                {/* Predict Button */}
                 <button
                     className="w-full mt-6 py-3 text-lg font-semibold bg-green-600 hover:bg-green-700 text-white rounded-xl shadow-md transition"
                     onClick={handlePredict}
@@ -85,14 +83,12 @@ export default function Upload() {
                     🔍 Predict Disease
                 </button>
 
-                {/* Loading */}
                 {loading && (
                     <p className="text-center text-green-700 font-semibold mt-4 animate-pulse">
                         🌾 Analyzing image...
                     </p>
                 )}
 
-                {/* Result Box */}
                 {result && (
                     <div className="mt-6 bg-green-50 border border-green-200 rounded-xl p-5">
                         <h2 className="text-xl font-bold text-green-700">

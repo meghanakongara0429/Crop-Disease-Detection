@@ -23,7 +23,7 @@ export default function Upload() {
 
         try {
             const res = await axios.post(
-                "http://localhost:5000/predict",
+                "https://crop-disease-detection-9-znu8.onrender.com/predict",
                 formData,
                 { headers: { "Content-Type": "multipart/form-data" } }
             );

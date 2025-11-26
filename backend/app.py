@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app, resources={
     r"/*": {
         "origins": "*",
-        "methods": ["POST", "GET", "OPTIONS"],
+        "methods": ["POST"],
         "allow_headers": ["Content-Type"],
     }
 })
